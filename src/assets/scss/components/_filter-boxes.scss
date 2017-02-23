@@ -1,0 +1,123 @@
+// EVENT FILTER BAR
+.eventFilters {
+   background: $brand-primary;
+   color: #fff;
+   padding: 15px 15px 6px;
+   text-align: center;
+   margin: 0 0 2rem;
+
+   @include media-breakpoint-up(sm) {
+      padding: 25px 25px 10px;
+   }
+
+   @include media-breakpoint-up(md) {
+      padding: 40px 25px 20px;
+   }
+}
+
+// RESULT FILTER BAR
+.resourceFilterBar {
+   background: #E6E7E7;
+   padding: 15px;
+   text-align: center;
+   margin: 0 0 2rem;
+}
+
+.resourceFilterBarLead {
+   text-transform: uppercase;
+   font-weight: 700;
+   color: $brand-primary;
+   margin: 0 0 1rem;
+}
+
+// SEARCH RESULT FILTERS
+.searchResultFilters {
+   background: $brand-primary;
+   padding: 15px;
+   text-align: center;
+   margin: 0 0 2rem;
+   color: #fff;
+
+   @include media-breakpoint-up(md) {
+      padding: 15px 25px 39px;
+   }
+}
+
+.searchResultFilterLead {
+   text-transform: uppercase;
+   font-weight: 700;
+   color: #fff;
+   margin: 0 0 1rem;
+}
+
+// FILTER BOXES
+.filterBox {
+   display: inline-block;
+   font-weight: 700;
+   text-transform: uppercase;
+   border: 1px solid #fff;
+   margin: 0 9px 9px 0;
+   padding: 0.4rem 0.6rem;
+   @include rem-calc(10px);
+   cursor: pointer;
+
+   @include media-breakpoint-up(sm) {
+      @include rem-calc(14px);
+      margin: 0 7px 15px;
+   }
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(20px);
+      padding: 0.3rem 1.5rem;
+      margin: 0 10px 20px;
+      border-width: 2px;
+   }
+
+   &.resourceFilter {
+      border: 1px solid #808080;
+      color: #808080;
+
+      &:hover {
+         background: $brand-accent1;
+         color: #fff;
+         border-color: $brand-accent1;
+      }
+
+      &.on {
+         background: $brand-accent1;
+         color: #fff;
+         border-color: $brand-accent1;
+
+         &:hover {
+            background: $brand-accent1-dark;
+         }
+      }
+   }
+
+   &:hover {
+      background: $brand-primary-dark;
+   }
+
+   &.on {
+      background: $brand-accent1;
+      color: #fff;
+      border-color: $brand-accent1;
+
+      &:hover {
+         background: $brand-accent1-dark;
+         border-color: $brand-accent1-dark;
+      }
+
+      &::after {
+         content: "\f00d";
+         font-family: FontAwesome;
+         display: inline-block;
+         margin: 0 0 0 11px;
+         font-weight: normal;
+      }
+   }
+}
+
+.searchResultFilters {
+
+}

@@ -1,0 +1,74 @@
+section.reconEvents {
+   background: url(../images/textureBlueGrid.jpg);
+   color: #fff;
+
+   .col {
+
+      @include media-breakpoint-up(sm) {
+         // @include flex-grid-row;
+         display: flex;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+      }
+   }
+}
+
+.reconEventThumb {
+   margin: 0 0 2rem;
+
+   @include media-breakpoint-up(sm) {
+      //@include flex-grid-column(5);
+      @include make-col-ready();
+      @include make-col(5);
+      padding: 0 !important;
+      margin: 0;
+   }
+
+   &::after {
+      content: "";
+      padding: 0 0 50%;
+      display: block;
+   }
+}
+
+.reconEventContent {
+   text-align: center;
+   font-family: $font-family-base2;
+
+   @include media-breakpoint-up(sm) {
+      //@include flex-grid-column(7);
+      @include make-col-ready();
+      @include make-col(7);
+      text-align: left;
+   }
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(20px);
+      padding: 0 0 0 35px;
+   }
+
+   @include media-breakpoint-up(lg) {
+      padding: 0 0 0 60px;
+   }
+
+   @include media-breakpoint-up(xl) {
+      padding: 0 0 0 95px;
+   }
+
+   h2 {
+      @include big-header;
+      color: #fff;
+      border-color: #fff;
+
+      span {
+
+         &::after {
+            left: 0;
+         }
+      }
+   }
+
+   .btn {
+      margin: 0 7px 15px;
+   }
+}

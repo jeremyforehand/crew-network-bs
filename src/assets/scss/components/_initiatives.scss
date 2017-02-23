@@ -1,0 +1,80 @@
+section.initiatives {
+   background: url(../images/initiativesBg.jpg) 50% 50% no-repeat;
+   background-size: cover;
+   text-align: center;
+
+   .column {
+
+      @include media-breakpoint-up(md) {
+         padding: 0;
+      }
+   }
+
+   h2 {
+      @include big-header;
+      color: $brand-primary;
+      border-color: $brand-primary;
+
+      @include media-breakpoint-up(md) {
+
+      }
+
+      span {
+
+         @include media-breakpoint-up(md) {
+            margin-bottom: 3rem;
+         }
+      }
+   }
+}
+
+// INITIATIVE BOXES
+.initiativeBoxContainer {
+
+   @include media-breakpoint-up(sm) {
+      //@include flex-grid-row;
+      //@include flex-align(justify, top);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+   }
+}
+
+.initiativeBox {
+   background: #fff;
+   box-shadow: 2px 2px 6px rgba(#000, 0.4);
+   margin: 0 0 2rem;
+   padding: 25px 15px;
+   font-weight: 300;
+   @include rem-calc(14px);
+
+   @include media-breakpoint-up(sm) {
+      //@include flex-grid-column();
+      min-width: 48%;
+      width: 48%;
+      margin: 0 1% 1rem;
+   }
+
+   @include media-breakpoint-up(md) {
+      min-width: 23%;
+      width: 23%;
+      padding: 75px 25px;
+   }
+
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+
+.iniativeBoxHeader {
+   color: $brand-primary;
+   font-weight: 700;
+   text-transform: uppercase;
+   @include rem-calc(16px);
+   margin: 0 0 1rem;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(20px);
+   }
+}

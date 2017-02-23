@@ -1,0 +1,97 @@
+section.sponsors {
+   text-align: center;
+
+   h3.sponsorHeader {
+      @include big-header;
+      text-transform: none;
+      color: #ED6B48;
+      position: relative;
+      overflow: hidden;
+      max-width: $global-width;
+
+      @include media-breakpoint-up(md) {
+         margin: 0 0 35px;
+      }
+
+      @include media-breakpoint-up(lg) {
+         margin: 0 0 60px;
+      }
+
+      &.alt {
+         color: $brand-primary;;
+
+         span {
+
+            &::before,
+            &::after {
+               display: none;
+            }
+         }
+      }
+
+      span {
+         display: inline-block;
+         padding: 0 15px;
+         border: none;
+         margin: 0;
+
+         &::before,
+         &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-bottom: 1px solid #ED6B48;
+            top: 50%;
+            height: 1px;
+         }
+
+         &::before {
+            left: -9999px;
+            right: 100%;
+         }
+
+         &::after {
+            right: -9999px;
+            left: 100%;
+         }
+      }
+   }
+}
+
+.sponsorContainer {
+   //@include flex-grid-row;
+   display:flex;
+   flex-wrap: wrap;
+   margin: 0 0 2rem;
+
+   @include media-breakpoint-up(md) {
+      margin: 0 0 5rem;
+   }
+
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+
+a.sponsorBox {
+   width: 38%;
+   margin: 0 6% 2rem;
+
+   @include media-breakpoint-up(sm) {
+      width: 21.3333333%;
+   }
+
+   @include media-breakpoint-up(md) {
+      width: 13%;
+   }
+
+   &::after {
+      content: "";
+      display: block;
+      padding: 0 0 40%;
+   }
+
+   &:hover {
+      opacity: 0.7;
+   }
+}

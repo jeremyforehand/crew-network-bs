@@ -1,0 +1,157 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead(style="background: url(assets/images/findMasthead.jpg) 50% 50% no-repeat; background-size: cover;")
+				.flex-row
+					.mastheadCaption
+						h1 Locate CREW Near You
+						
+			section.find
+				.flex-row
+					.col
+						
+						.findFilters
+							span Filter by
+							.dropDownWrapper
+								select#findCountry(name="Select Country")
+									option(value="Select Country" selected disabled) Select Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+									
+							.dropDownWrapper
+								select#findState(name="Select State")
+									option(value="Select State" selected disabled) Select State
+									option(value="State") State
+									option(value="State") State
+									option(value="State") State
+									option(value="State") State
+									
+							input(type="submit", value="Change")
+								
+							a.findFilterNothing(href="") Nothing near you?
+							
+						.findBoxContainer
+							
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+							
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									
+							.findBox
+								.findBoxName Statename
+								ul
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+									li: a(href="") Birmingham CREW
+						
+			section.actionRow
+				.row
+					.column
+						h4: span Nothing Near You?
+						p You may be eligible to join as an at-large member and receive all benefits of membership.
+						p
+							a.btn.whiteGhost(href="") Professionals
+							a.btn.whiteGhost(href="") Students
+							
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade
+			
+			script(src="//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js")
+			script.
+				;(function($) {
+					$(document).ready(function() {
+						$('.findBoxContainer').masonry({
+						  // options
+						  itemSelector: '.findBox'
+						});
+					});						
+				})(jQuery);

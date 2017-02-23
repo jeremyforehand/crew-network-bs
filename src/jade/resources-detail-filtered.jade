@@ -1,0 +1,122 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead(style="background: url(assets/images/resourcesMasthead.jpg) 50% 50% no-repeat; background-size: cover;")
+				.flex-row
+					.mastheadCaption
+						h1 Delegates & Foundation Champions Resources
+						
+			section.resourceList
+				.flex-row
+					.col
+						
+						.resourceSearchBar
+							input(type="text", placeholder="SEARCH CATEGORY BY KEYWORD")
+							input(type="submit", value="Go")
+								
+						.resourceFilterBar
+							.resourceFilterBarLead Or Filter by CATEGORY
+							.filterBox.resourceFilter.on Agendas
+							.filterBox.resourceFilter Tools
+							.filterBox.resourceFilter Leadership Summits
+							.filterBox.resourceFilter Conventions
+							.filterBox.resourceFilter Presentations
+							.filterBox.resourceFilter Budgets
+							.filterBox.resourceFilter Minutes
+							.filterBox.resourceFilter Type #
+							.filterBox.resourceFilter Type #
+							
+						.resourceListHeader
+							| Showing Agendas
+							.clearFilter Clear Filter
+							
+						.resourceBoxContainer
+						
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-pdf.png", alt="")
+								.resourceBoxContent
+									h2 Chapter membership renewal management form
+									p PDF Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-word.png", alt="")
+								.resourceBoxContent
+									h2 Mid-year membership discount flier
+									p Word Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-ppt.png", alt="")
+								.resourceBoxContent
+									h2 2016 Spring Leadership Summit Council Meeting
+									p PowerPoint Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-pdf.png", alt="")
+								.resourceBoxContent
+									h2 Chapter membership renewal management form
+									p PDF Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-word.png", alt="")
+								.resourceBoxContent
+									h2 Mid-year membership discount flier
+									p Word Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-ppt.png", alt="")
+								.resourceBoxContent
+									h2 2016 Spring Leadership Summit Council Meeting
+									p PowerPoint Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-pdf.png", alt="")
+								.resourceBoxContent
+									h2 Chapter membership renewal management form
+									p PDF Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-word.png", alt="")
+								.resourceBoxContent
+									h2 Mid-year membership discount flier
+									p Word Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-ppt.png", alt="")
+								.resourceBoxContent
+									h2 2016 Spring Leadership Summit Council Meeting
+									p PowerPoint Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-pdf.png", alt="")
+								.resourceBoxContent
+									h2 Chapter membership renewal management form
+									p PDF Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-word.png", alt="")
+								.resourceBoxContent
+									h2 Mid-year membership discount flier
+									p Word Download &nbsp;|&nbsp; Updated 10-31-2016
+									
+							a.resourceBox(href="")
+								img.resourceBoxIcon(src="assets/images/resourceIcon-ppt.png", alt="")
+								.resourceBoxContent
+									h2 2016 Spring Leadership Summit Council Meeting
+									p PowerPoint Download &nbsp;|&nbsp; Updated 10-31-2016
+								
+						include includes/_pagination.jade
+
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade

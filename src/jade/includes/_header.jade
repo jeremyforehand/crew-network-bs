@@ -1,0 +1,44 @@
+header
+	.headerInner
+		.logo: a(href="index.html"): img(src="assets/images/logo.png", alt="CREW Network")
+			
+		.topAction
+			
+			.topActionSearch
+				input(type="text", placeholder="SEARCH")
+				input(type="submit", value="Go")
+				.menuToggle
+				
+			.topActionTabContainer
+				
+				.topActionTabs
+					.topActionTab.login
+						span Account Login
+						.topActionContent.login
+							.topActionContentInner
+								.topActionHeader: span Login
+								input(type="text", placeholder="E-MAIL ADDRESS")
+								input(type="password", placeholder="PASSWORD")
+								input(type="submit", value="Login")
+								a.topActionForgotPassword(href="") Forgot your password?
+								a.topActionCreateAccount(href="") Create a new account
+							
+					.topActionTab.find
+						span Find CREW
+						.topActionContent.find
+							.topActionContentInner
+								.topActionHeader: span Locate CREW Near You
+								.dropDownWrapper
+									select#locateCrewDrop(name="Select Country")
+										option(value="Select Country" selected disabled) SELECT COUNTRY
+										option(value="Country") Country
+										option(value="Country") Country
+										option(value="Country") Country
+										option(value="Country") Country
+										option(value="Country") Country
+										option(value="Country") Country
+										option(value="Country") Country
+										option(value="Country") Country
+								a.topActionNothingNear(href="") Nothing near you?
+							
+		include _navigation.jade

@@ -1,0 +1,187 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+		
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead.mastheadHome(style="background: url(assets/images/homePageHero.jpg) 50% 50% no-repeat; background-size: cover;")
+				.flex-row
+					.mastheadCaption
+						h1 The premier resource and referral network in commercial real estate
+						
+			section.homeStats
+				.flex-row
+					.col
+						h2 Advancing the Achievements of Women in Commercial Real Esate
+						.statContainer
+							.statBox
+								.statBoxValue 70+
+								.statBoxItem Markets
+							.statBox
+								.statBoxValue 10k
+								.statBoxItem Active Members
+							.statBox
+								.statBoxValue 76%
+								.statBoxItem Executive Level
+							.statBox
+								.statBoxValue 72%
+								.statBoxItem Member-to-Member Referrals
+						p: a.btn.btn-accent1(href="") See what CREW Network can do for you
+						
+			section.homeResources
+				.flex-row
+					.col
+						.homeResourceIntro
+							h2 Resources
+							p CREW Network is impacting the industry through invaluable initiatives and opportunities for its members worldwide.
+							a.allLink.homeResourceIntroAction(href="") Explore All Resources
+							
+						.homeResourceLinks
+							.circleLinkContainer
+								a.circleLink(href="")
+									.circleLinkCircle
+										img.circleLinkIcon.gray(src="assets/images/iconBarGraph.png", alt="")
+										img.circleLinkIcon.white(src="assets/images/iconBarGraph-white.png", alt="")
+									.circleLinkText Industry Research
+								
+								a.circleLink(href="")
+									.circleLinkCircle
+										img.circleLinkIcon.gray(src="assets/images/iconGlobe.png", alt="")
+										img.circleLinkIcon.white(src="assets/images/iconGlobe-white.png", alt="")
+									.circleLinkText Global Agenda
+									
+								a.circleLink(href="")
+									.circleLinkCircle
+										img.circleLinkIcon.gray(src="assets/images/iconTrophy.png", alt="")
+										img.circleLinkIcon.white(src="assets/images/iconTrophy-white.png", alt="")
+									.circleLinkText Awards
+									
+								a.circleLink(href="")
+									.circleLinkCircle
+										img.circleLinkIcon.gray(src="assets/images/iconGradHat.png", alt="")
+										img.circleLinkIcon.white(src="assets/images/iconGradHat-white.png", alt="")
+									.circleLinkText Scholorships
+									
+						.homeResourcePostings
+							ul
+								li
+									a(href="")
+										.resourcePostingTitle Senior Underwriter
+										.resourcePostingLocation Irvine, CA
+								li
+									a(href="")
+										.resourcePostingTitle VP of Construction
+										.resourcePostingLocation Newport Beach, CA
+								li
+									a(href="")
+										.resourcePostingTitle Property Manager
+										.resourcePostingLocation New York, NY
+								li
+									a(href="")
+										.resourcePostingTitle General Manager
+										.resourcePostingLocation Brentwood, CA
+								li
+									a(href="")
+										.resourcePostingTitle Loan Closer
+										.resourcePostingLocation Dallas, TX
+										
+							a.allLink.homeResourcePostingAll(href="") View All Postings
+							
+			section.homeEvent(style="background: url(assets/images/homeEventBg.jpg) 50% 50% no-repeat; background-size: cover;")
+				.flex-row
+					.col
+						.homeEventContent
+							.homeEventDate October 19-22
+							h2.homeEventTitle 2017 CREW Network Convention &amp; Marketplace
+							.homeEventLocation New York Hilton Midtown &nbsp;|&nbsp; New York, NY
+							.homeEventAction: a.btn.btn-accent1(href="") Register Now
+							a.allLink.homeEventSeeAll(href="") See All Events
+							
+			section.relatedBoxes
+				.flex-row
+					.col
+						.relatedBoxContainer
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox1.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle #crewconvention preview: Hudson Yards, largest private development in the U.S. Hudson Yards, largest private development in the U.S.
+									span.allLink Read More
+								
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox2.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle #crewconvention preview
+									span.allLink Read More
+								
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox3.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle #crewconvention preview: Hudson Yards, largest private development in the U.S.
+									span.allLink Read More
+								
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox4.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle #crewconvention preview: Hudson Yards, largest private development in the U.S.
+									span.allLink Read More
+								
+						p: a.allLink.btn.accent1Ghost(href="") View All News
+						
+			section.sponsors
+				.flex--row
+					.col
+						h3.sponsorHeader.alt: span Our Program Partners
+						
+						.sponsorContainer
+							a.sponsorBox(style="background: url(assets/images/sponsor1.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor2.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor3.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor4.png) 50% 50% no-repeat; background-size: contain;")
+								
+						h3.sponsorHeader: span Our Premier Lead Sponsors
+						
+						.sponsorContainer
+							a.sponsorBox(style="background: url(assets/images/sponsor5.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor6.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor7.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor8.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor9.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor10.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor11.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor12.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor13.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor14.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor15.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor16.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor17.png) 50% 50% no-repeat; background-size: contain;")
+
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade

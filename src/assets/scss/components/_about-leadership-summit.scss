@@ -1,0 +1,48 @@
+section.aboutLeadershipSummit {
+   font-family: $font-family-base2;
+   text-align: center;
+
+   .col {
+
+      @include media-breakpoint-up(md) {
+         //@include flex-grid-column(10);
+         //@include grid-column-position(center);
+         @include make-col(10);
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      @include media-breakpoint-up(lg) {
+         //@include flex-grid-column(8);
+         @include make-col(8);
+      }
+   }
+
+   h2 {
+      @include big-header;
+   }
+
+   .button {
+      font-family: $font-family-base;
+   }
+}
+
+a.viewPastEvents {
+   clear: both;
+   color: $brand-accent1;
+   font-weight: 700;
+   text-transform: uppercase;
+   font-family: $font-family-base;
+   @include rem-calc(14px);
+   margin-top: 2rem;
+
+   &:hover {
+      color: $brand-accent1-dark;
+   }
+
+   &::before {
+      content: "";
+      display: block;
+      margin: 0 0 1rem;
+   }
+}

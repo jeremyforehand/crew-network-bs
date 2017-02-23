@@ -1,0 +1,163 @@
+section.upcomingEvents {
+   padding: 25px 0 75px;
+
+   .col {
+      padding: 0;
+   }
+}
+
+.eventFilterLead {
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+   margin: 0 0 0.6rem;
+   color: #4a4a4a;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(20px);
+      margin: 0 0 1rem;
+   }
+}
+
+.upcomingEventsTitle {
+   margin: 0 15px 1rem;
+   border-bottom: 1px solid #979797;
+   font-weight: 700;
+   color: #545454;
+   @include rem-calc(20px);
+   padding: 0 0 0.4rem;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(25px);
+      margin-bottom: 2rem;
+   }
+
+   @include media-breakpoint-up(lg) {
+      @include rem-calc(30px);
+      margin-bottom: 3rem;
+      //@include flex-grid-column(10);
+      //@include grid-column-position(center);
+      @include make-col(10);
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+// EVENT BOXES
+.eventBoxContainer {
+   padding: 0 15px;
+   margin-bottom: 3rem;
+
+   @include media-breakpoint-up(sm) {
+      //@include flex-grid-row;
+      //@include flex-align(justify, top);
+      display: flex;
+      align-items: top;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   @include media-breakpoint-up(lg) {
+      //@include flex-grid-column(10);
+      //@include grid-column-position(center);
+      @include make-col(10);
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+a.eventBox {
+   display: block;
+   color: #808080;
+   //@include flex-grid-row;
+   //@include flex-align(justify, top);
+   display: flex;
+   align-items: top;
+   justify-content: space-between;
+   margin: 0 0 2rem;
+   padding: 0 !important;
+
+   @include media-breakpoint-up(sm) {
+      //@include flex-grid-column('shrink', 0);
+      @include make-col-ready();
+      width: 47%;
+      line-height: 1.2;
+   }
+
+   @include media-breakpoint-up(md) {
+      margin: 0 0 3rem;
+   }
+
+   &:hover {
+      color: $brand-accent1;
+   }
+}
+
+.eventBoxDate {
+   color: #545454;
+   font-weight: 700;
+   text-align: center;
+   //@include flex-grid-column('shrink', 0);
+   @include make-col-ready();
+   min-width: 65px;
+   width: 65px;
+   line-height: 1;
+   text-transform: uppercase;
+   padding: 6px 0 0 !important;
+
+   .eventBox:hover & {
+      color: $brand-accent1;
+   }
+}
+
+.eventBoxMonth {
+   @include rem-calc(18px);
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(20px);
+   }
+}
+
+.eventBoxDay {
+   @include rem-calc(30px);
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(36px);
+   }
+}
+
+.eventBoxContent {
+   //@include flex-grid-column('expand', 0);
+   @include make-col-ready;
+   font-family: $font-family-base2;
+   padding: 0 !important;
+
+   @include media-breakpoint-up(md) {
+      padding: 0 0 0 25px !important;
+   }
+}
+
+.eventBoxTitle {
+   @include rem-calc(18px);
+   font-weight: 700;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(25px);
+   }
+}
+
+.eventBoxLocation {
+   @include rem-calc(18px);
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(25px);
+   }
+}
+
+.eventBoxType {
+   @include rem-calc(12px);
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(14px);
+   }
+}

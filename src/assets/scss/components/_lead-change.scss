@@ -1,0 +1,22 @@
+section.leadChange {
+   text-align: center;
+   @include rem-calc(14px);
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(18px);
+   }
+
+   h2 {
+      @include big-header;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   p {
+      font-family: $font-family-base2;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}

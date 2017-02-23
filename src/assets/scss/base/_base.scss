@@ -1,0 +1,202 @@
+body {
+
+	&.stuck {
+		overflow: hidden;
+		position: relative;
+		height: 100%;
+	}
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.wide {
+	width: 100%;
+	overflow: hidden;
+}
+
+ul,
+ol {
+	margin-bottom: $list-margin-bottom;
+
+	li {
+		line-height: 1.2;
+		margin-bottom: 0.8em;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		ul,
+		ol {
+			margin-top: 0.8em;
+		}
+	}
+}
+
+a {
+	color: $brand-accent1;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	color: #000;
+}
+
+h2 {
+	color: $brand-primary;
+	font-weight: 700;
+	@include rem-calc(20px);
+
+	@include media-breakpoint-up(md) {
+		@include rem-calc(25px);
+	}
+
+	@include media-breakpoint-up(lg) {
+		@include rem-calc(30px);
+	}
+}
+
+h3 {
+	color: #000;
+	font-family: $font-family-base2;
+	@include rem-calc(18px);
+	font-weight: 700;
+
+	@include media-breakpoint-up(md) {
+		@include rem-calc(20px);
+	}
+}
+
+h4 {
+	color: #000;
+	@include rem-calc(18px);
+	font-weight: 700;
+
+	@include media-breakpoint-up(md) {
+		@include rem-calc(20px);
+	}
+}
+
+input {
+	box-shadow: none;
+}
+
+.button, .btn {
+   font-weight: 700;
+   text-transform: uppercase;
+	border-radius: 100px;
+	white-space: normal;
+	@include rem-calc(15px);
+	font-family: $font-family-base;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(20px);
+		padding: 0.85em 2em;
+   }
+}
+
+a.btn-accent1,
+.btn-accent1 {
+	background: $brand-accent1;
+	color: #fff;
+
+	&:hover {
+		background: $brand-accent1-dark;
+		color: #fff;
+	}
+}
+
+a.accent1Ghost {
+	background: transparent;
+	border: 2px solid $brand-accent1;
+	color: $brand-accent1;
+
+	&:hover {
+		background: $brand-accent1;
+		color: #fff;
+	}
+}
+
+a.whiteGhost {
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+
+	&:hover {
+		background: #fff;
+		color: $brand-accent1;
+	}
+}
+
+a.getAppButton,
+a.registerTodayButton {
+	@include rem-calc(24px);
+
+	@include media-breakpoint-up(md) {
+		@include rem-calc(32px);
+	}
+
+	@include media-breakpoint-up(lg) {
+		@include rem-calc(40px);
+	}
+}
+
+.allLink {
+
+	&::after {
+		content: "\f105";
+		font-family: FontAwesome;
+		display: inline-block;
+		margin: 0 0 0 7px;
+	}
+}
+
+.mainShade {
+	background: rgba(#000, 0.8);
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s;
+
+	&.on {
+		opacity: 1;
+		pointer-events: auto;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+[type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"], [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], textarea {
+   margin: 0 0 1rem;
+	padding: 0.5rem;
+	width: 100%;
+	font-family: $font-family-base;
+}

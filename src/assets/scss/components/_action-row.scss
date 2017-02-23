@@ -1,0 +1,74 @@
+section.actionRow {
+   background: $brand-accent1;
+   color: #fff;
+   text-align: center;
+
+   @include media-breakpoint-up(md) {
+      padding: 75px 0;
+   }
+
+   @include media-breakpoint-up(lg) {
+      padding: 100px 0;
+   }
+
+   &.inline {
+
+      .column {
+         max-width: 2000px;
+      }
+
+      h4 {
+         display: inline-block;
+         vertical-align: middle;
+         margin: 15px 0;
+
+         @include media-breakpoint-up(lg) {
+            margin: 0;
+         }
+      }
+
+      p {
+         display: inline-block;
+         vertical-align: middle;
+      }
+
+      .button {
+         @include media-breakpoint-up(lg) {
+            min-width: 240px;
+         }
+      }
+   }
+
+   .column {
+      max-width: 940px;
+      margin: 0 auto;
+   }
+
+   h4 {
+      @include big-header;
+      color: #fff;
+      border-color: #fff;
+   }
+
+   p {
+      margin: 0 0 2rem;
+
+      @include media-breakpoint-up(md) {
+         @include rem-calc(20px);
+      }
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+
+   a.btn {
+      margin-left: 7px;
+      margin-right: 7px;
+
+      @include media-breakpoint-up(md) {
+         margin-left: 33px;
+         margin-right: 33px;
+      }
+   }
+}

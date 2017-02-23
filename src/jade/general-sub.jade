@@ -1,0 +1,148 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead.noImage.altTextSize
+				.flex-row
+					.mastheadCaption
+						h1 Vestibulum id ligula porta felis
+						
+			section.generalSubBody
+				.flex-row
+					.col
+						
+						.interiorShare
+							a(href=""): i.fa.fa-facebook
+							a(href=""): i.fa.fa-twitter
+							a(href=""): i.fa.fa-linkedin
+							a(href=""): i.fa.fa-pinterest
+							a(href=""): i.fa.fa-envelope
+							
+						.generalBody
+							h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							
+							p Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna.. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							
+							p Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Loremet, consectetur adipiscing elit.
+							
+						.imageCaptionTop
+							.imageCaptionTopCopy
+								p <strong>Image Caption could go here.</strong> Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							.imageCaptionTopThumb(style="background: url(assets/images/newsDetail.jpg) 50% 50% no-repeat; background-size: cover;")
+								
+						.generalBody
+							h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							
+							ul
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								
+							h3 Maecenas sed diam eget risus varius blandit sit amet non magna.
+							
+							p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							
+							p: img(src="assets/images/newsDetail.jpg", alt="")
+								
+							h4 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							
+							p Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna.
+							
+							h2 Form Elements
+							
+							.formContainer
+								
+								label(for="") Name
+								input(type="text")
+									
+								label(for="") Email
+								input(type="text")
+								.callout.alert Please enter a valid email address
+									
+								label(for="") Choose an Option
+								.dropDownWrapper
+									select#abc(name="")
+										option(value="Option 1") Option 1
+										option(value="Option 2") Option 2
+										option(value="Option 3") Option 3
+										option(value="Option 4") Option 4
+										option(value="Option 5") Option 5
+										
+								label(for="") Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Do you concur?
+								input#radio1(type="radio", name="radio", value="")
+								label(for="radio1") Yes
+								input#radio2(type="radio", name="radio", value="")
+								label(for="radio2") No
+								
+								label(for="") Check all that apply
+								input#checkbox1(type="checkbox")
+								label(for="checkbox1") Red
+								input#checkbox2(type="checkbox")
+								label(for="checkbox2") Orange
+								input#checkbox3(type="checkbox")
+								label(for="checkbox3") Yellow
+								input#checkbox4(type="checkbox")
+								label(for="checkbox4") Green
+								input#checkbox5(type="checkbox")
+								label(for="checkbox5") Blue
+								input#checkbox6(type="checkbox")
+								label(for="checkbox6") Indigo
+								input#checkbox7(type="checkbox")
+								label(for="checkbox7") Violet
+								
+								label(for="") Comments or questions?
+								textarea#xyz(name="", cols="30", rows="10")
+									
+								input(type="submit", value="Submit")
+							
+			section.relatedBoxes
+				.flex-row
+					.col
+						h2 Related Pages/Articles
+						
+						.relatedBoxContainer
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox1.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle 2017 CREW Network Convention & Marketplace
+									span.allLink Read More
+								
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox1.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle 2017 Winter Leadership Summit
+									span.allLink Read More
+								
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox1.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle 2017 CREW Network Convention & Marketplace
+									span.allLink Read More
+								
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox1.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle 2017 Winter Leadership Summit
+									span.allLink Read More		
+
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade

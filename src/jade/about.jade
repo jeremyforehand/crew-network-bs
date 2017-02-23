@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead(style="background: url(assets/images/aboutMasthead.jpg) 50% 50% no-repeat; background-size: cover;")
+				.flex-row
+					.mastheadCaption
+						h1 About Us
+						
+			section.mission
+				.flex-row
+					.col
+						
+						h2: span Our mission
+						p CREW Network exists to influence the success of the commercial real estate industry by advancing the achievements of women.
+						
+			section.history
+				.flex-row
+					.col
+						.historyVideo
+							iframe(width="560" height="315" src="https://www.youtube.com/embed/3bwqlipBA0Y" frameborder="0" allowfullscreen)
+							
+						.historyContent
+							h2: span Our History
+							p Founded in 1989, CREW Network is the industry’s premier business networking organization dedicated to influencing the success of the commercial real estate industry by advancing the achievements of women. CREW Network provides support to our members worldwide through business development, leadership development, industry research and career outreach.
+							
+			section.initiatives
+				.flex-row
+					.col
+						
+						h2: span Our Initiatives
+						
+						.initiativeBoxContainer
+							.initiativeBox
+								.iniativeBoxHeader Business Development
+								p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+								
+							.initiativeBox
+								.iniativeBoxHeader Industry Research
+								p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna.
+								
+							.initiativeBox
+								.iniativeBoxHeader Leadership Development
+								p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								
+							.initiativeBox
+								.iniativeBoxHeader Career Outreach
+								p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna.
+								
+			section.actionRow.inline
+				.flex-row
+					.col
+						h4 How Can we Help You?
+						p
+							a.btn.whiteGhost(href="") Email
+							a.btn.whiteGhost(href="") Call Us
+							
+			section.locateSmall
+				.flex-row
+					.col
+						span Locate a CREW Near You
+						.dropDownWrapper
+							select#findCountry(name="Select Country")
+								option(value="Select Country" selected disabled) Select Country
+								option(value="Country") Country
+								option(value="Country") Country
+								option(value="Country") Country
+								option(value="Country") Country
+								option(value="Country") Country
+								option(value="Country") Country
+							
+						a.findFilterNothing(href="") Nothing near you?
+						
+
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade

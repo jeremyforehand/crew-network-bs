@@ -1,0 +1,29 @@
+section.mission {
+   background: url(../images/textureWhiteGrid.jpg);
+   text-align: center;
+   color: $brand-primary;
+   @include rem-calc(16px);
+
+   @include media-breakpoint-up(sm) {
+      @include rem-calc(20px);
+   }
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(24px);
+   }
+
+   @include media-breakpoint-up(lg) {
+      @include rem-calc(30px);
+   }
+
+   .col {
+      max-width: 900px;
+      margin: 0 auto;
+   }
+
+   h2 {
+      @include big-header;
+      color: $brand-primary;
+      border-color: $brand-primary;
+   }
+}

@@ -1,0 +1,31 @@
+section.homeStats {
+   text-align: center;
+   background: url(../images/globeBg.jpg) 50% 50% no-repeat;
+   background-size: cover;
+
+   .flex-row {
+
+      @include media-breakpoint-up(sm) {
+         justify-content: center;
+      }
+   }
+
+   .col {
+
+      @include media-breakpoint-up(sm) {
+         max-width: 650px;
+         //@include grid-column-position(center);
+      }
+
+      @include media-breakpoint-up(md) {
+         //@include flex-grid-column(10);
+         @include make-col(10);
+         margin: 0 auto;
+         max-width: 2000px;
+      }
+   }
+
+   h2 {
+      @include big-header;
+   }
+}

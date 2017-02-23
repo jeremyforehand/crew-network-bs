@@ -1,0 +1,105 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead(style="background: url(assets/images/newsMasthead.jpg) 50% 50% no-repeat; background-size: cover;")
+				.flex-row
+					.mastheadCaption
+						h1 News
+						
+			section.newsList
+				.flex-row
+					.col
+						
+						.newsFilter
+							.newsFilterLead Filter by:
+							
+							.dropDownWrapper
+								select#month(name="Month")
+									option(value="Month" selected disabled) Month
+									option(value="Month") Month
+									option(value="Month") Month
+									option(value="Month") Month
+									option(value="Month") Month
+									option(value="Month") Month
+									option(value="Month") Month
+									option(value="Month") Month
+									
+							.dropDownWrapper
+								select#year(name="Year")
+									option(value="Year" selected disabled) Year
+									option(value="Year") Year
+									option(value="Year") Year
+									option(value="Year") Year
+									option(value="Year") Year
+									option(value="Year") Year
+									option(value="Year") Year
+									option(value="Year") Year
+									option(value="Year") Year
+									option(value="Year") Year
+									
+							.dropDownWrapper
+								select#category(name="Category")
+									option(value="Category" selected disabled) Category
+									option(value="Category") Category
+									option(value="Category") Category
+									option(value="Category") Category
+									option(value="Category") Category
+									option(value="Category") Category
+									option(value="Category") Category
+									option(value="Category") Category
+									option(value="Category") Category
+									
+						.newsBoxContainer
+							
+							.newsBox
+								.newsBoxDate December 20, 2016
+								h2: a(href="") 10 Steps for Launching an Award-Winning Communications Program
+								.newsBoxName Susan Shelby, FSMPS, CPSM
+								.newsBoxTitle President & CEO &nbsp;|&nbsp; Rhino PR &nbsp;|&nbsp; CREW Boston
+								
+							.newsBox
+								.newsBoxDate December 20, 2016
+								h2: a(href="") 10 Steps for Launching an Award-Winning Communications Program
+								.newsBoxName Susan Shelby, FSMPS, CPSM
+								.newsBoxTitle President & CEO &nbsp;|&nbsp; Rhino PR &nbsp;|&nbsp; CREW Boston
+								
+							.newsBox
+								.newsBoxDate December 20, 2016
+								h2: a(href="") 10 Steps for Launching an Award-Winning Communications Program
+								.newsBoxName Susan Shelby, FSMPS, CPSM
+								.newsBoxTitle President & CEO &nbsp;|&nbsp; Rhino PR &nbsp;|&nbsp; CREW Boston
+								
+							.newsBox
+								.newsBoxDate December 20, 2016
+								h2: a(href="") 10 Steps for Launching an Award-Winning Communications Program
+								.newsBoxName Susan Shelby, FSMPS, CPSM
+								.newsBoxTitle President & CEO &nbsp;|&nbsp; Rhino PR &nbsp;|&nbsp; CREW Boston
+								
+							.newsBox
+								.newsBoxDate December 20, 2016
+								h2: a(href="") 10 Steps for Launching an Award-Winning Communications Program
+								.newsBoxName Susan Shelby, FSMPS, CPSM
+								.newsBoxTitle President & CEO &nbsp;|&nbsp; Rhino PR &nbsp;|&nbsp; CREW Boston
+								
+							.newsBox
+								.newsBoxDate December 20, 2016
+								h2: a(href="") 10 Steps for Launching an Award-Winning Communications Program
+								.newsBoxName Susan Shelby, FSMPS, CPSM
+								.newsBoxTitle President & CEO &nbsp;|&nbsp; Rhino PR &nbsp;|&nbsp; CREW Boston
+								
+						include includes/_pagination.jade
+
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade

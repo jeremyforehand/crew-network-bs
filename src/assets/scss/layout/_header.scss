@@ -1,0 +1,120 @@
+header {
+
+	.headerInner {
+		//@include flex-align(right, top);
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+
+		@include media-breakpoint-up(md) {
+			width: 100%;
+			flex-wrap: wrap;
+		}
+
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.logo {
+	width: 25%;
+	background: $brand-primary;
+	padding: 22px 7px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	max-width: 90px;
+	transition: width 0.2s ease-out, height 0.2s ease-out;
+
+	@include media-breakpoint-up(sm) {
+		max-width: 185px;
+		padding: 15px 7px;
+	}
+
+	@include media-breakpoint-up(md) {
+		position: fixed;
+		height: 170px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		max-width: 225px;
+		height: 180px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		height: 215px;
+	}
+
+	&.shrunk {
+
+		@include media-breakpoint-up(md) {
+			width: 100px;
+			height: 100px;
+		}
+	}
+
+	img {
+		width: 65px;
+		height: auto;
+		display: inline-block;
+		transition: width 0.2s ease-out, transform 0.2s ease-out;
+
+		@include media-breakpoint-up(md) {
+			width: 90px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		@include media-breakpoint-up(lg) {
+			width: 90px;
+		}
+
+		@include media-breakpoint-up(xl) {
+			width: 100px;
+		}
+	}
+
+	&.shrunk img {
+
+		@include media-breakpoint-up(md) {
+			width: 50px;
+		}
+	}
+}
+
+// MENU TOGGLE
+.menuToggle {
+	background: $brand-secondary;
+	color: #fff;
+	width: 65px;
+	line-height: 65px;
+	text-align: center;
+	//@include flex-grid-column('shrink');
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+
+	@include media-breakpoint-up(md) {
+		display: none;
+	}
+
+	&:hover {
+		background: $brand-secondary-dark;
+	}
+
+	&::after {
+		content: "\f039";
+		font-family: FontAwesome;
+		display: block;
+		font-size: 25px;
+	}
+}

@@ -1,0 +1,193 @@
+section.howJoin {
+   text-align: center;
+   color: #fff;
+   padding: 0;
+
+   @include media-breakpoint-up(sm) {
+      //@include flex-grid-row;
+      @include make-row();
+      flex-wrap: nowrap;
+      margin: 0 !important;
+      width: 100%;
+      max-width: 3000px;
+   }
+
+   h2 {
+      @include big-header;
+      color: #fff;
+      border-color: #fff;
+   }
+}
+
+.howJoinLeft {
+
+   @include media-breakpoint-up(sm) {
+      //@include flex-grid-column('expand', 0);
+      @include make-col-ready();
+      padding: 0 !important;
+   }
+}
+
+.howJoinLeftTop {
+   padding: 40px 15px;
+   position: relative;
+
+   @include media-breakpoint-up(md) {
+      padding: 70px 25px;
+   }
+
+   @include media-breakpoint-up(lg) {
+      padding: 120px 25px 70px;
+   }
+
+   &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($brand-secondary, 0.7);
+   }
+}
+
+.joinCircleContainer {
+   position: relative;
+   //@include flex-grid-row;
+   //@include flex-align(justify, top);
+   @include  make-row();
+   max-width: 900px;
+   margin: 0 auto;
+
+   @include media-breakpoint-up(md) {
+      padding: 1rem 0;
+   }
+
+   @include media-breakpoint-up(lg) {
+      padding: 2rem 0;
+      flex-wrap: nowrap;
+   }
+}
+
+.joinCircleBox {
+   //@include flex-grid-column(6);
+   @include make-col(6);
+   font-family: $font-family-base2;
+   font-weight: 700;
+   padding: 0 1.6rem;
+   margin-bottom: 3rem;
+
+   @include media-breakpoint-up(md) {
+      //@include flex-grid-column(3);
+      @include make-col(3);
+      padding: 0 11px !important;
+      margin-bottom: 0;
+      max-width: 250px;
+   }
+
+   @include media-breakpoint-up(lg) {
+      @include rem-calc(24px);
+   }
+
+   @include media-breakpoint-up(xl) {
+      @include rem-calc(30px);
+   }
+
+   &:nth-child(3),
+   &:nth-child(4) {
+      margin-bottom: 0;
+   }
+}
+
+.joinCircle {
+   background: #fff;
+   color: $brand-primary;
+   border-radius: 150px;
+   width: 70px;
+   position: relative;
+   margin: 0 auto 1rem;
+   @include rem-calc(30px);
+   font-weight: 700;
+
+   @include media-breakpoint-up(lg) {
+      width: 100px;
+      @include rem-calc(50px);
+   }
+
+   &::after {
+      content: "";
+      display: block;
+      padding: 0 0 100%;
+   }
+
+   span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-block;
+      transform: translate(-50%, -50%);
+   }
+}
+
+.joinQualifications {
+   background: $brand-secondary;
+   padding: 25px 15px;
+   @include rem-calc(14px);
+   font-family: $font-family-base2;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(18px);
+   }
+
+   @include media-breakpoint-up(lg) {
+      padding: 60px 25px;
+   }
+
+   h3 {
+      @include big-header;
+      color: #fff;
+      border-color: #fff;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   p {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+.howJoinRight {
+
+   @include media-breakpoint-up(sm) {
+      //@include flex-grid-column('shrink', 0);
+      @include make-col-ready();
+      width: 300px;
+      min-width: 300px;
+      background: $brand-primary;
+      position: relative;
+      padding: 0 !important;
+   }
+
+   @include media-breakpoint-up(lg) {
+      width: 400px;
+      min-width: 400px;
+   }
+
+   .topActionContent {
+      display: block;
+      position: relative;
+      top: auto;
+      left: auto;
+
+      @include media-breakpoint-up(sm) {
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         position: absolute;
+      }
+   }
+}

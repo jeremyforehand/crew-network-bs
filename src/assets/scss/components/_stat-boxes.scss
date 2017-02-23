@@ -1,0 +1,42 @@
+.statContainer {
+   //@include flex-grid-row;
+   //@include flex-align(center, middle);
+   display: flex;
+   align-items: center;
+   align-content: center;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 1rem 0 3rem;
+}
+
+.statBox {
+   //@include flex-grid-column(6);
+   width: 50%;
+   color: $brand-primary;
+   font-weight: 700;
+   padding: 1rem;
+   font-family: $font-family-base2;
+
+   @include media-breakpoint-up(md) {
+      //@include flex-grid-column(3);
+      width: 25%;
+   }
+}
+
+.statBoxValue {
+   @include rem-calc(50px);
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(70px);
+   }
+}
+
+.statBoxItem {
+   @include rem-calc(18px);
+   text-transform: uppercase;
+   line-height: 1.2;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(20px);
+   }
+}

@@ -1,0 +1,237 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead.micrositeMasthead(style="background: url(assets/images/micrositeMasthead.jpg) 50% 50% no-repeat; background-size: cover;")
+				.flex-row
+					.mastheadCaption
+						h1 2017 CREW Network Winter Leadership Summit
+						p: a.btn.btn-accent1(href="") Register Now
+						
+				.micrositeMastheadDate
+					span Feb. 9-10 2017 &nbsp;|&nbsp; Hollywood, CA
+					a.btn.whiteGhost(href="") View Attendees
+					
+			section.aboutLeadershipSummit
+				.flex-row
+					.col
+						h2: span About the leadership summit
+						p These summits serve as CREW Network’s “leadership laboratories,” where you can receive leadership training, participate in association business, and demonstrate your skills in a supportive environment. Chapter delegates are required to attend, but you’re encouraged to participate if you have an interest in developing your leadership skills, expanding your network outside of your local market or becoming more involved at the local and CREW Network levels. Nonmembers are invited to attend as well.
+						p
+							a.btn.btn-accent1(href="") Register Now
+							a.allLink.viewPastEvents(href="") View Past Events
+						
+			section.speakerBoxes
+				.flex-row
+					.col
+						h2: span Speakers
+						
+						.speakerBoxContainer
+							.speakerBox
+								.speakerBoxThumb(style="background: url(assets/images/speaker1.jpg) 50% 50% no-repeat; background-size: cover;")
+								h4.speakerBoxName Hillary Rodham Clinton
+								.speakerBoxTitle Former U.S. Secretary of State
+								a.speakerBoxAction(href="") Read More
+								
+							.speakerBox
+								.speakerBoxThumb(style="background: url(assets/images/speaker2.jpg) 50% 50% no-repeat; background-size: cover;")
+								h4.speakerBoxName Steve Forbes
+								.speakerBoxTitle Chairman &amp; Editor-in-Chief, Forbes Media
+								a.speakerBoxAction(href="") Read More
+								
+							.speakerBox
+								.speakerBoxThumb(style="background: url(assets/images/speaker3.jpg) 50% 50% no-repeat; background-size: cover;")
+								h4.speakerBoxName Kitty Kay
+								.speakerBoxTitle Lead Anchor, BBC World News America , Co-Author of The Confidence Code
+								a.speakerBoxAction(href="") Read More
+								
+							.speakerBox
+								.speakerBoxThumb(style="background: url(assets/images/speaker1.jpg) 50% 50% no-repeat; background-size: cover;")
+								h4.speakerBoxName Hillary Rodham Clinton
+								.speakerBoxTitle Former U.S. Secretary of State
+								a.speakerBoxAction(href="") Read More
+								
+							.speakerBox
+								.speakerBoxThumb(style="background: url(assets/images/speaker2.jpg) 50% 50% no-repeat; background-size: cover;")
+								h4.speakerBoxName Steve Forbes
+								.speakerBoxTitle Chairman &amp; Editor-in-Chief, Forbes Media
+								a.speakerBoxAction(href="") Read More
+								
+							.speakerBox
+								.speakerBoxThumb(style="background: url(assets/images/speaker3.jpg) 50% 50% no-repeat; background-size: cover;")
+								h4.speakerBoxName Kitty Kay
+								.speakerBoxTitle Lead Anchor, BBC World News America , Co-Author of The Confidence Code
+								a.speakerBoxAction(href="") Read More
+								
+							.speakerBox
+								.speakerBoxThumb(style="background: url(assets/images/speaker1.jpg) 50% 50% no-repeat; background-size: cover;")
+								h4.speakerBoxName Hillary Rodham Clinton
+								.speakerBoxTitle Former U.S. Secretary of State
+								a.speakerBoxAction(href="") Read More
+								
+			section.actionRow
+				.flex-row
+					.col
+						a.btn.whiteGhost.getAppButton(href="") Get the Convention App
+						
+			section.micrositeSchedule
+				.flex-row
+					.col
+						h2: span Schedule At-A-Glance
+						
+						.scheduleDay Tuesday, September 29
+						
+						table.table.table-responsive.table-striped.table-bordered
+							thead
+								tr
+									th Time
+									th Session
+									th Location
+							tbody
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast
+									td Location Name
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast - Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+									td Location Name
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast
+									td Location Name
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast
+									td Location Name
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast
+									td Location Name
+									
+						.scheduleDay Wednesday, September 30
+						
+						table.table.table-responsive.table-striped.table-bordered
+							thead
+								tr
+									th Time
+									th Session
+									th Location
+							tbody
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast
+									td Location Name
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast - Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+									td Location Name
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast
+									td Location Name
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast
+									td Location Name
+								tr
+									td 8:00 - 8:30 am
+									td: a(href="") Council Breakfast
+									td Location Name
+												
+						p: a.allLink.btn.accent1Ghost(href="") View Complete Schedule	
+						
+			section.actionRow
+				.flex-row
+					.col
+						a.btn.whiteGhost.registerTodayButton(href="") Register Today!
+						
+			section.sponsors
+				.flex-row
+					.col
+						h3.sponsorHeader: span Sponsors
+						
+						.sponsorContainer
+							a.sponsorBox(style="background: url(assets/images/sponsor5.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor6.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor7.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor8.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor9.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor10.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor11.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor12.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor13.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor14.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor15.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor16.png) 50% 50% no-repeat; background-size: contain;")
+								
+							a.sponsorBox(style="background: url(assets/images/sponsor17.png) 50% 50% no-repeat; background-size: contain;")
+								
+			section.eventVenue
+				.flex-row
+					.col
+						.eventVenueBox
+							h2 Event Venue
+							.venueMapBox
+								iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214586.68001049774!2d-80.11056125924141!3d32.82096739858982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe7a42dca82477%3A0x35faf7e0aee1ec6b!2sCharleston%2C+SC!5e0!3m2!1sen!2sus!4v1486065572302" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+								
+							.eventVenueBoxTitle Loews Miami Beach Hotel
+							.eventVenueBoxAddress 1601 Collins Ave, Miami Beach, FL 33139, USA
+							p
+								a.btn.btn-accent1(href="") Amenities
+								a.btn.accent1Ghost(href="") Hotel &amp; Travel Info
+								
+						.eventHighlightsBox
+							h2 2016 Highlights
+							
+							.eventHighlightContainer
+								a.eventHighlight(href="", style="background: url(http://www.placehold.it/600x400/cccccc/cccccc) 50% 50% no-repeat; background-size: cover;")
+									
+								a.eventHighlight(href="", style="background: url(http://www.placehold.it/600x400/cccccc/cccccc) 50% 50% no-repeat; background-size: cover;")
+									
+								a.eventHighlight(href="", style="background: url(http://www.placehold.it/600x400/cccccc/cccccc) 50% 50% no-repeat; background-size: cover;")
+									
+								a.eventHighlight(href="", style="background: url(http://www.placehold.it/600x400/cccccc/cccccc) 50% 50% no-repeat; background-size: cover;")
+									
+								a.eventHighlight(href="", style="background: url(http://www.placehold.it/600x400/cccccc/cccccc) 50% 50% no-repeat; background-size: cover;")
+									
+								a.eventHighlight(href="", style="background: url(http://www.placehold.it/600x400/cccccc/cccccc) 50% 50% no-repeat; background-size: cover;")
+									
+								a.eventHighlight(href="", style="background: url(http://www.placehold.it/600x400/cccccc/cccccc) 50% 50% no-repeat; background-size: cover;")
+									
+								a.eventHighlight(href="", style="background: url(http://www.placehold.it/600x400/cccccc/cccccc) 50% 50% no-repeat; background-size: cover;")
+									
+								a.eventHighlight(href="", style="background: url(http://www.placehold.it/600x400/cccccc/cccccc) 50% 50% no-repeat; background-size: cover;")
+									
+							p: a.btn.btn-accent1(href="") Go to Flickr Album
+							
+						
+			section.actionRow
+				.flex-row
+					.col
+						a.btn.whiteGhost.registerTodayButton(href="") Register Today!
+
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade

@@ -1,0 +1,57 @@
+section.micrositeSchedule {
+   background: url(../images/micrositeScheduleBg.jpg) 50% 50% no-repeat;
+   background-size: cover;
+   text-align: center;
+
+   h2 {
+      @include big-header;
+      color: $brand-primary;
+      border-color: $brand-primary;
+      text-align: center;
+   }
+
+   table {
+      background: #fff;
+      font-family: $font-family-base2;
+      margin: 0 0 4rem;
+      text-align: left;
+
+      @include media-breakpoint-up(md) {
+         max-width: 1000px;
+         margin: 0 auto 4rem;
+      }
+
+      a, a:visited {
+         color: #545454;
+
+         &:hover {
+            color: $brand-accent1;
+         }
+      }
+   }
+
+   th {
+      background: $brand-primary;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: $font-family-base;
+      border-width: 1px;
+   }
+}
+
+.scheduleDay {
+   font-weight: 700;
+   color: $brand-secondary;
+   @include rem-calc(20px);
+   margin: 0 auto 0.8rem;
+   max-width: 1000px;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(25px);
+   }
+
+   @include media-breakpoint-up(lg) {
+      @include rem-calc(30px);
+   }
+}

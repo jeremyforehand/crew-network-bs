@@ -1,0 +1,53 @@
+section.locateSmall {
+   background: $brand-primary-dark;
+   text-align: center;
+   color: #fff;
+
+   @include media-breakpoint-up(sm) {
+      padding: 50px 0;
+   }
+
+   span {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 0.8rem;
+      display: block;
+
+      @include media-breakpoint-up(sm) {
+         display: inline-block;
+         vertical-align: middle;
+         margin: 0 25px 0 0;
+      }
+
+      @include media-breakpoint-up(md) {
+         @include rem-calc(24px);
+      }
+
+      @include media-breakpoint-up(lg) {
+         @include rem-calc(30px);
+      }
+   }
+
+   .dropDownWrapper {
+      margin: 0 0 0.8rem;
+
+      @include media-breakpoint-up(sm) {
+         display: inline-block;
+         vertical-align: middle;
+         margin: 0;
+      }
+
+      select {
+         margin: 0;
+         border: none;
+      }
+   }
+}
+
+a.findFilterNothing {
+
+   @include media-breakpoint-up(sm) {
+      display: inline-block;
+      vertical-align: middle;
+   }
+}

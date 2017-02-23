@@ -1,0 +1,120 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead(style="background: url(assets/images/joinMasthead.jpg) 50% 50% no-repeat; background-size: cover;")
+				.flex-row
+					.mastheadCaption
+						h1 Why Join CREW?
+						
+			section.leadChange
+				.flex-row
+					.col
+						h2: span We're committed to leading change
+						p Experience unparalleled business development, leadership opportunities and networking growth locally through chapter’s events and internationally through CREW Network’s, Leadership Summits, annual Convention & Marketplace, and more regularly, through webinars and conference calls.
+						
+						.statContainer
+							.statBox
+								.statBoxValue 9,500+
+								.statBoxItem Member Base
+								
+							.statBox
+								.statBoxValue 200+
+								.statBoxItem Exclusive Job Opportunities
+								
+							.statBox
+								.statBoxValue Lower
+								.statBoxItem Membership Dues
+								
+			section.howJoin
+						
+				.howJoinLeft
+					
+					.howJoinLeftTop(style="background: url(assets/images/howToJoinBg.jpg) 50% 50% no-repeat; background-size: cover;")
+						h2: span How to Join
+					
+						.joinCircleContainer
+							.joinCircleBox
+								.joinCircle: span 1
+								.joinCircleTitle Locate CREW near you
+								
+							.joinCircleBox
+								.joinCircle: span 2
+								.joinCircleTitle Apply for CREW Membership
+								
+							.joinCircleBox
+								.joinCircle: span 3
+								.joinCircleTitle Pay dues &amp; build your profile 
+								
+							.joinCircleBox
+								.joinCircle: span 4
+								.joinCircleTitle Grow your business &amp; network
+								
+						
+					.joinQualifications
+						h3: span Qualifications
+						p Five (5) years' experience in a "qualified field of commercial real estate" and employed full time in a professional position, the primary responsibilities of which are in a "qualified field of commercial real estate."
+						
+						p *Qualifications may vary depending on your selected CREW
+						
+				.howJoinRight
+					.topActionContent.find
+						.topActionContentInner
+							.topActionHeader: span Get Started
+							.topActionSubHeader Locate CREW Near You
+							.dropDownWrapper
+								select#locateCrewDrop(name="Select Country")
+									option(value="Select Country" selected disabled) Select Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+									option(value="Country") Country
+							a.topActionNothingNear(href="") Nothing near you?
+								
+			section.faqs
+				.flex-row
+					.col
+						.faqWrapper
+							h2: span Frequently Asked Questions
+							.faqBoxContainer
+								.faqBox
+									.faqBoxQuestion Etiam porta sem malesuada magna mollis euismod?
+									p.faqBoxAnswer Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur.
+									
+								.faqBox
+									.faqBoxQuestion Etiam porta sem malesuada magna mollis euismod?
+									p.faqBoxAnswer Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+									
+								.faqBox
+									.faqBoxQuestion Etiam porta sem malesuada magna mollis euismod?
+									p.faqBoxAnswer Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur.
+									
+								.faqBox
+									.faqBoxQuestion Etiam porta sem malesuada magna mollis euismod?
+									p.faqBoxAnswer Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+									
+								.faqBox
+									.faqBoxQuestion Etiam porta sem malesuada magna mollis euismod?
+									p.faqBoxAnswer Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+									
+								.faqBox
+									.faqBoxQuestion Etiam porta sem malesuada magna mollis euismod?
+									p.faqBoxAnswer Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur.
+										
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade

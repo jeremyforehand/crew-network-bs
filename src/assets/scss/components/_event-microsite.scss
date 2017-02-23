@@ -1,0 +1,38 @@
+.micrositeMastheadDate {
+   position: absolute;
+   background: $brand-primary;
+   color: #fff;
+   left: 50%;
+   bottom: 0;
+   transform: translate(-50%, 0);
+   width: 100%;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 700;
+   padding: 25px;
+   max-width: 1000px;
+
+   @include media-breakpoint-up(md) {
+      padding: 35px;
+   }
+
+   span {
+      display: block;
+      margin: 0 0 0.8rem;
+      @include rem-calc(18px);
+
+      @include media-breakpoint-up(sm) {
+         display: inline-block;
+         margin: 0 35px 0 0;
+         vertical-align: middle;
+      }
+
+      @include media-breakpoint-up(md) {
+         @include rem-calc(24px);
+      }
+
+      @include media-breakpoint-up(lg) {
+         @include rem-calc(30px);
+      }
+   }
+}

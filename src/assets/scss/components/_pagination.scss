@@ -1,0 +1,77 @@
+.pagination {
+   text-align: center;
+   padding: 25px 0;
+   display: block;
+
+   &::after {
+      @extend .clearfix;
+   }
+
+   a, a:visited,
+   span {
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      width: 30px;
+      text-align: center;
+      color: #bbbdbf;
+      border: 1px solid transparent;
+      margin: 0 4px 8px;
+      vertical-align: top;
+      padding: 0;
+      font-weight: 700;
+
+      @include media-breakpoint-up(md) {
+         @include rem-calc(20px);
+      }
+
+      &:hover {
+         border-color: $brand-primary;
+         background: transparent;
+      }
+
+      &.active {
+         color: $brand-primary;
+         border-color: $brand-primary;
+      }
+   }
+}
+
+.paginationItem {
+
+   &::after {
+      content: "";
+      font-family: FontAwesome;
+      display: inline-block;
+   }
+
+   &.first {
+
+      &::after {
+         content: "\f100";
+      }
+   }
+
+   &.prev {
+      margin-right: 15px;
+
+      &::after {
+         content: "\f104";
+      }
+   }
+
+   &.next {
+      margin-left: 15px;
+
+      &::after {
+         content: "\f105";
+      }
+   }
+
+   &.last {
+
+      &::after {
+         content: "\f101";
+      }
+   }
+}

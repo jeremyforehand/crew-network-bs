@@ -1,0 +1,334 @@
+.topAction {
+   position: relative;
+   z-index: 99;
+   width: 100%;
+   padding: 0 0 0 90px;
+
+   @include media-breakpoint-up(sm) {
+      padding-left: 185px;
+   }
+
+   @include media-breakpoint-up(md) {
+      //@include flex-grid-row;
+      display: flex;
+      max-width: 100%;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      margin-right: 0;
+   };
+
+   @include media-breakpoint-up(lg) {
+      padding: 0 0 0 225px;
+   }
+
+   &.home {
+
+      @include media-breakpoint-up(md) {
+         position: absolute;
+         padding: 0;
+         width: 325px;
+         top: 0;
+         right: 0;
+      }
+
+      @include media-breakpoint-up(xl) {
+         width: 385px;
+      }
+   }
+}
+
+// SEARCH
+.topActionSearch {
+   //@include flex-grid-row;
+   //@include flex-grid-column(12, 0);
+   display:flex;
+   padding-right: 65px !important;
+
+   @include media-breakpoint-up(md) {
+      background: #fff;
+      //@include flex-grid-column('expand');
+      padding-right: 0 !important;
+      flex-grow: 1;
+   }
+
+   .home & {
+
+      @include media-breakpoint-up(md) {
+         width: 100%;
+      }
+   }
+
+   input[type="text"] {
+      //@include flex-grid-column();
+      background: white;
+      appearance: none;
+      height: 65px;
+      line-height: 65px;
+      padding: 0 15px;
+      border: none;
+      color: #444;
+      margin: 0;
+      @include rem-calc(16px);
+      font-family: $font-family-base;
+      @include input-placeholder(#9b9b9b);
+      min-width: 1px;
+
+      @include media-breakpoint-up(md) {
+         height: 60px;
+         line-height: 60px;
+         text-align: left;
+      }
+   }
+
+   input[type="submit"] {
+      background: url('../images/iconSearch.png') 50% 50% no-repeat;
+      background-size: 21px auto;
+      text-indent: -9999px;
+      appearance: none;
+      border: none;
+      @include make-col-ready();
+      width: 60px;
+      //@include flex-grid-column('shrink');
+
+      @include media-breakpoint-up(md) {
+         height: 60px;
+         width: 60px;
+         line-height: 60px;
+      }
+   }
+}
+
+// TABS
+.topActionTabContainer {
+   //@include flex-grid-column(12, 0);
+   display: flex;
+   width: 100%;
+   position: relative;
+
+   @include media-breakpoint-up(md) {
+      //@include flex-grid-column('shrink', 0);
+      width: 325px;
+   }
+
+   @include media-breakpoint-up(xl) {
+      width: 385px;
+   }
+}
+
+.topActionTabs {
+   //@include flex-grid-row;
+   display: flex;
+   width: 100%;
+}
+
+.topActionTab {
+   //@include flex-grid-column(6, 0);
+   width: 50%;
+   text-align: center;
+   background: $brand-primary-dark;
+   color: #fff;
+   @include rem-calc(12px);
+   text-transform: uppercase;
+   border-left: 1px solid #fff;
+   cursor: pointer;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(14px);
+   }
+
+   & > span {
+      display: block;
+      line-height: 65px;
+      height: 65px;
+      border-bottom: 1px solid #fff;
+
+      @include media-breakpoint-up(md) {
+         line-height: 60px;
+         height: 60px;
+      }
+   }
+
+   &:first-child {
+      border-left: none;
+   }
+
+   &.on {
+      background: $brand-primary;
+
+      & > span {
+         border-bottom-color: $brand-primary;
+
+         &::before {
+            content: "\f00d";
+            font-family: FontAwesome;
+            display: block;
+            font-weight: normal;
+            font-size: 20px;
+         }
+      }
+   }
+
+   &:hover {
+      background: $brand-primary;
+   }
+}
+
+.topAction.home {
+
+   .topActionTab.on {
+
+      > span {
+
+         &::before {
+
+            @include media-breakpoint-up(md) {
+               display: none;
+            }
+         }
+      }
+   }
+}
+
+// TAB CONTENT
+.topActionContent {
+   position: absolute;
+   top: 65px;
+   left: 0;
+   width: 100%;
+   background: $brand-primary;
+   color: #fff;
+   display: none;
+   text-align: center;
+
+   @include media-breakpoint-up(md) {
+      top: 60px;
+   }
+
+   .home & {
+
+      @include media-breakpoint-up(md) {
+         height: 380px;
+      }
+
+      @include media-breakpoint-up(lg) {
+         height: 480px;
+      }
+
+      @include media-breakpoint-up(xl) {
+         height: 630px;
+      }
+   }
+
+   &.on {
+      display: block;
+   }
+
+   input[type="text"],
+   input[type="password"] {
+      border: none;
+      @include rem-calc(14px);
+      text-align: center;
+      color: #444;
+      @include input-placeholder(#BBBDBF);
+   }
+
+   input[type="submit"] {
+      @extend .btn, .btn-accent1;
+      border: none;
+      appearance: none;
+      font-weight: 700;
+      border-radius: 50px;
+      display: inline-block;
+      min-width: 120px;
+      margin: 0 0 32px;
+      color: #fff;
+      padding: 0.65em 1em !important;
+      text-transform: none;
+
+      @include media-breakpoint-up(md) {
+         @include rem-calc(16px);
+      }
+
+      &:hover {
+         background: $brand-accent1-dark;
+      }
+   }
+
+   .dropDownWrapper {
+      margin-bottom: 32px;
+   }
+
+   select {
+      border: none;
+      color: #444;
+      @include rem-calc(14px);
+   }
+
+   a, a:visited {
+      color: #fff;
+
+      &:hover {
+         opacity: 0.8;
+      }
+   }
+}
+
+.topActionContentInner {
+   padding: 35px;
+
+   @include media-breakpoint-up(lg) {
+      padding: 65px;
+   }
+
+   .home & {
+      @include media-breakpoint-up(md) {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 100%;
+         transform: translate(-50%, -50%);
+      }
+   }
+}
+
+.topActionHeader {
+   @include big-header;
+   color: #fff;
+   border-color: #fff;
+
+   @include media-breakpoint-up(lg) {
+      @include rem-calc(30px);
+   }
+
+   span {
+
+      &::after {
+         width: 100px;
+         left: 50%;
+         right: auto;
+         transform: translate(-50%, 0);
+      }
+   }
+}
+
+.topActionSubHeader {
+   font-weight: 700;
+   margin: 0 0 2rem;
+}
+
+a.topActionForgotPassword,
+a.topActionCreateAccount,
+a.topActionNothingNear {
+   @include rem-calc(14px);
+   display: block;
+   text-decoration: underline;
+   font-family: $font-family-base2;
+   text-transform: none;
+}
+
+.topActionContent.login {
+
+   input[type="password"] {
+      margin-bottom: 32px;
+   }
+}

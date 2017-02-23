@@ -1,0 +1,21 @@
+$button-color: #fff;
+$button-color-alt: #fff;
+$button-radius: 100px;
+$button-padding: 0.85em 2em;
+
+$table-border: 1px solid #979797;
+$global-width: 1300px;
+
+$paragraph-margin-bottom: 2rem;
+
+$button-margin: 0;
+
+$header-lineheight: 1.2;
+
+$list-margin-bottom: $spacer;
+
+.flex-row {
+   margin-left: auto;
+   margin-right: auto;
+   max-width: $global-width;
+}

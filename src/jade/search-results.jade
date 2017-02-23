@@ -1,0 +1,88 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead.noImage.searchResultsMastehead
+				.flex-row
+					.mastheadCaption
+						h1 Search Results For "Keyword"
+						.resultsSearchBox
+							input(type="text", placeholder="KEYWORD")
+							input(type="submit", value="Go")
+								
+			section.searchResults
+				.flex-row
+					.col
+						.searchResultFilters
+							.searchResultFilterLead Filter Results
+							.filterBox.searchResultFilter.on Resources
+							.filterBox.searchResultFilter Pages
+							.filterBox.searchResultFilter News
+							.filterBox.searchResultFilter Events
+							.filterBox.searchResultFilter Presentations
+							.filterBox.searchResultFilter Type #
+							
+						.searchResultList
+					
+							.resourceListHeader Showing 20 of 105 Results Below
+							
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+							.searchResultBox
+								h2: a(href="") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. 
+								
+						include includes/_pagination.jade
+							
+
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade

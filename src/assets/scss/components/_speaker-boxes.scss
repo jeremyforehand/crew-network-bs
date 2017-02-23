@@ -1,0 +1,94 @@
+section.speakerBoxes {
+   background: url(../images/textureWhiteGrid.jpg);
+   text-align: center;
+
+   h2 {
+      @include big-header;
+      color: $brand-primary;
+      border-color: $brand-primary;
+
+      @include media-breakpoint-up(md) {
+         margin: 0 auto 2rem;
+      }
+   }
+}
+
+.speakerBoxContainer {
+   //@include flex-grid-row;
+   //@include flex-align(justify, null);
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.speakerBox {
+   //@include flex-grid-column('shrink', 0);
+   width: 48%;
+   background: #4A4A4A;
+   color: #fff;
+   margin: 0 0 2rem;
+   padding: 0 0 75px;
+   position: relative;
+
+   @include media-breakpoint-up(sm) {
+      width: 32%;
+   }
+
+   @include media-breakpoint-up(md) {
+      padding-bottom: 95px;
+      width: 24%;
+   }
+
+   h4 {
+      @include big-header;
+      color: #fff;
+      @include rem-calc(14px);
+      padding: 0 15px;
+      margin: 0 0 0.5rem;
+
+      @include media-breakpoint-up(md) {
+         @include rem-calc(20px);
+      }
+   }
+}
+
+.speakerBoxTitle {
+   font-family: $font-family-base2;
+   @include rem-calc(12px);
+   padding: 0 15px;
+
+   @include media-breakpoint-up(md) {
+      @include rem-calc(14px);
+   }
+}
+
+.speakerBoxThumb {
+   margin: 0 0 1rem;
+
+   @include media-breakpoint-up(md) {
+      margin: 0 0 2rem;
+   }
+
+   &::after {
+      content: "";
+      display: block;
+      padding: 0 0 110%;
+   }
+}
+
+a.speakerBoxAction {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background: $brand-accent1;
+   color: #fff;
+   font-weight: 700;
+   text-transform: uppercase;
+   display: block;
+   padding: 15px;
+
+   &:hover {
+      background: $brand-accent1-dark;
+   }
+}

@@ -1,0 +1,102 @@
+doctype html
+html(lang="en")
+	head
+		include includes/_head.jade
+		title Page Title
+
+	body
+
+		.wide
+
+			include includes/_header.jade
+
+			// BEGIN PAGE SPECIFIC MARKUP
+
+			section.masthead.noImage.newsDetailMasthead
+				.flex-row
+					.mastheadCaption
+						h1 Vestibulum id ligula porta felis euismod semper lacus vel augue laoreet rutrum
+						.newsDetailDate November 23, 2016
+						.newsDetailAuthor Written by: Firstname Lastname
+						.newsDetailTags
+							a(href="") Tag Name
+							a(href="") Tag Name
+							a(href="") Tag Name
+							a(href="") Tag Name
+							a(href="") Tag Name
+							a(href="") Tag Name
+							
+			section.newsDetailContent
+				.flex-row
+					.col
+						
+						.interiorShare
+							a(href=""): i.fa.fa-facebook
+							a(href=""): i.fa.fa-twitter
+							a(href=""): i.fa.fa-linkedin
+							a(href=""): i.fa.fa-pinterest
+							a(href=""): i.fa.fa-envelope
+							
+						.imageCaptionTop
+							.imageCaptionTopCopy
+								p <strong>Image Caption could go here.</strong> Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							.imageCaptionTopThumb(style="background: url(assets/images/newsDetail.jpg) 50% 50% no-repeat; background-size: cover;")
+								
+						.newsDetailBody
+							h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							
+							p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. <a href="">Curabitur blandit tempus</a> porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+							ul
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								li Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+								
+							h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							
+							p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							
+							h4 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							
+							p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							
+			section.relatedBoxes
+				.flex-row
+					.col
+						h2 Related News
+						
+						.relatedBoxContainer
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox1.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle 2017 CREW Network Convention & Marketplace
+									span.allLink Read More
+								
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox1.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle 2017 Winter Leadership Summit
+									span.allLink Read More
+								
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox1.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle 2017 CREW Network Convention & Marketplace
+									span.allLink Read More
+								
+							a.relatedBox(href="")
+								.relatedBoxThumb(style="background: url(assets/images/newsBox1.jpg) 50% 50% no-repeat; background-size: cover;")
+								.relatedBoxContent
+									.relatedBoxDate September 16, 2016
+									h3.relatedBoxTitle 2017 Winter Leadership Summit
+									span.allLink Read More
+
+			// END PAGE SPECIFIC MARKUP
+
+			include includes/_footer.jade

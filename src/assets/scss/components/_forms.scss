@@ -1,0 +1,137 @@
+.dropDownWrapper {
+   background: #fff;
+   position: relative;
+
+   &::after {
+      content: "\f107";
+      font-family: FontAwesome;
+      display: inline-block;
+      color: #BBBDBF;
+      position: absolute;
+      right: 11px;
+      top: 50%;
+      transform: translate(0,-50%);
+      pointer-events: none;
+   }
+
+   select {
+      background: transparent;
+      margin: 0;
+      display: block;
+      border: none;
+      width: 100%;
+      appearance: none;
+      padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+      height: 2.4375rem;
+      font-family: $font-family-base;
+   }
+}
+
+.formContainer {
+
+   .dropDownWrapper {
+      margin-bottom: $paragraph-margin-bottom;
+      border: 1px solid #ddd;
+   }
+
+   input {
+      margin-bottom: $paragraph-margin-bottom;
+
+      + .callout {
+         margin-top: -$paragraph-margin-bottom;
+
+         &.alert {
+            //@include callout-style(#fff);
+            color: $brand-primary;
+            border: none;
+            padding: 0.4rem 0;
+         }
+      }
+   }
+
+   input[type="radio"] {
+      display: none;
+
+      + label {
+         display: inline-block;
+         padding: 0 0 0 30px;
+         position: relative;
+         margin-bottom: $paragraph-margin-bottom;
+
+         &::before {
+            content: "";
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            border: 1px solid $brand-accent1;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-family: FontAwesome;
+            border-radius: 20px;
+         }
+      }
+
+      &:checked {
+
+         + label {
+
+            &::before {
+               content: "";
+               display: inline-block;
+               background: $brand-accent1;
+               color: #fff;
+            }
+         }
+      }
+   }
+
+   input[type="checkbox"] {
+      display: none;
+
+      + label {
+         display: inline-block;
+         padding: 0 0 0 30px;
+         position: relative;
+         margin-bottom: $paragraph-margin-bottom;
+
+         &::before {
+            content: "";
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid $brand-accent1;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-family: FontAwesome;
+         }
+      }
+
+      &:checked {
+
+         + label {
+
+            &::before {
+               content: "\f00c";
+               display: inline-block;
+               background: $brand-accent1;
+               color: #fff;
+            }
+         }
+      }
+   }
+
+   input[type="submit"] {
+      @extend .btn, .btn-primary;
+      border: 0;
+      appearance: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: $button-padding;
+   }
+}
