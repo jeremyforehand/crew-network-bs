@@ -7070,7 +7070,7 @@ header .headerInner {
   width: 100%;
   z-index: 99;
   max-width: 90px;
-  transition: width 0.2s ease-out, height 0.2s ease-out; }
+  transition: width 0.2s ease-out 0s, height 0.2s ease-out 0s; }
   @media (min-width: 768px) {
     .logo {
       max-width: 185px;
@@ -7078,7 +7078,8 @@ header .headerInner {
   @media (min-width: 992px) {
     .logo {
       position: fixed;
-      height: 170px; } }
+      height: 130px;
+      width: 165px; } }
   @media (min-width: 1200px) {
     .logo {
       max-width: 225px;
@@ -7088,18 +7089,16 @@ header .headerInner {
       height: 215px; } }
   @media (min-width: 992px) {
     .logo.shrunk {
-      width: 100px;
+      width: 90px;
       height: 100px; } }
   .logo img {
     width: 65px;
     height: auto;
     display: inline-block;
-    transition: width 0.2s ease-out, -webkit-transform 0.2s ease-out;
-    transition: width 0.2s ease-out, transform 0.2s ease-out;
-    transition: width 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out; }
+    transition: width 0.2s ease-out, height 0.2s ease-out; }
     @media (min-width: 992px) {
       .logo img {
-        width: 90px;
+        width: 70px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -7842,7 +7841,7 @@ a.topActionNothingNear {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       .masthead.altTextSize .mastheadCaption {
         -webkit-flex: 0 0 83.33333%;
         -ms-flex: 0 0 83.33333%;
@@ -7850,6 +7849,18 @@ a.topActionNothingNear {
         max-width: 83.33333%;
         margin-left: auto;
         margin-right: auto; } }
+    @media (min-width: 1200px) {
+      .masthead.altTextSize .mastheadCaption {
+        -webkit-flex: 0 0 66.66667%;
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%; } }
+    @media (min-width: 1400px) {
+      .masthead.altTextSize .mastheadCaption {
+        -webkit-flex: 0 0 83.33333%;
+        -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%; } }
   .masthead.altTextSize h1 {
     font-size: 25px;
     font-size: 1.5625rem; }
@@ -7875,7 +7886,7 @@ a.topActionNothingNear {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%; }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       .masthead.newsDetailMasthead .mastheadCaption {
         -webkit-flex: 0 0 83.33333%;
         -ms-flex: 0 0 83.33333%;
@@ -7883,6 +7894,18 @@ a.topActionNothingNear {
         max-width: 83.33333%;
         margin-left: auto;
         margin-right: auto; } }
+    @media (min-width: 1200px) {
+      .masthead.newsDetailMasthead .mastheadCaption {
+        -webkit-flex: 0 0 66.66667%;
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%; } }
+    @media (min-width: 1400px) {
+      .masthead.newsDetailMasthead .mastheadCaption {
+        -webkit-flex: 0 0 83.33333%;
+        -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%; } }
   .masthead.newsDetailMasthead h1 {
     font-size: 25px;
     font-size: 1.5625rem; }

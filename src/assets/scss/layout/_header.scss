@@ -29,7 +29,7 @@ header {
 	width: 100%;
 	z-index: 99;
 	max-width: 90px;
-	transition: width 0.2s ease-out, height 0.2s ease-out;
+	transition: width 0.2s ease-out 0s, height 0.2s ease-out 0s;
 
 	@include media-breakpoint-up(sm) {
 		max-width: 185px;
@@ -38,7 +38,8 @@ header {
 
 	@include media-breakpoint-up(md) {
 		position: fixed;
-		height: 170px;
+		height: 130px;
+		width: 165px;
 	}
 
 	@include media-breakpoint-up(lg) {
@@ -53,7 +54,7 @@ header {
 	&.shrunk {
 
 		@include media-breakpoint-up(md) {
-			width: 100px;
+			width: 90px;
 			height: 100px;
 		}
 	}
@@ -62,10 +63,10 @@ header {
 		width: 65px;
 		height: auto;
 		display: inline-block;
-		transition: width 0.2s ease-out, transform 0.2s ease-out;
+		transition: width 0.2s ease-out, height 0.2s ease-out;
 
 		@include media-breakpoint-up(md) {
-			width: 90px;
+			width: 70px;
 			position: absolute;
 			top: 50%;
 			left: 50%;

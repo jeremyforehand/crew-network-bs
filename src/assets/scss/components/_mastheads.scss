@@ -89,12 +89,20 @@
 				@include make-col(12);
 			}
 
-			@include media-breakpoint-up(lg) {
-				//@include flex-grid-column(10);
-				//@include grid-column-position(center);
+			@include media-breakpoint-up(md) {
 				@include make-col(10);
 				margin-left: auto;
 				margin-right: auto;
+			}
+
+			@include media-breakpoint-up(lg) {
+				//@include flex-grid-column(10);
+				//@include grid-column-position(center);
+				@include make-col(8);
+			}
+
+			@include media-breakpoint-up(xl) {
+				@include make-col(10);
 			}
 		}
 
@@ -131,12 +139,20 @@
 			//@include flex-grid-column(12);
 			@include make-col(12);
 
-			@include media-breakpoint-up(lg) {
-				//@include flex-grid-column(10);
-				//@include grid-column-position(center);
+			@include media-breakpoint-up(md) {
 				@include make-col(10);
 				margin-left: auto;
 				margin-right: auto;
+			}
+
+			@include media-breakpoint-up(lg) {
+				//@include flex-grid-column(10);
+				//@include grid-column-position(center);
+				@include make-col(8);
+			}
+
+			@include media-breakpoint-up(xl) {
+				@include make-col(10);
 			}
 		}
 
