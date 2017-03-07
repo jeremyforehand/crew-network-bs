@@ -152,11 +152,41 @@
               <p>Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
               <h2>Form Elements</h2>
               <div class="formContainer">
-                <label for="">Name</label>
+                <label class="required" for="">Name</label>
                 <input type="text">
-                <label for="">Email</label>
-                <input type="text">
+                <label class="error" for="">Email</label>
+                <input class="error" type="text">
                 <div class="callout alert">Please enter a valid email address</div>
+                <label for="">Label</label>
+                <input type="text" disabled>
+                <fieldset>
+                  <legend>Fieldset Title</legend>
+                  <label for="">Label</label>
+                  <input type="text">
+                  <label for="">Label</label>
+                  <input type="text">
+                  <label for="">Label</label>
+                  <input type="text">
+                </fieldset>
+                <div class="formRow">
+                  <div class="formCol">
+                    <label class="error" for="">Label</label>
+                    <input class="error" type="text">
+                    <div class="callout alert">Please enter a valid email address</div>
+                  </div>
+                  <div class="formCol">
+                    <label for="">Label</label>
+                    <input type="text">
+                  </div>
+                  <div class="formCol">
+                    <label for="">Label</label>
+                    <input type="text">
+                  </div>
+                  <div class="formCol">
+                    <label for="">Label</label>
+                    <input type="text">
+                  </div>
+                </div>
                 <label for="">Choose an Option</label>
                 <div class="dropDownWrapper">
                   <select id="abc" name="">
@@ -167,29 +197,55 @@
                     <option value="Option 5">Option 5</option>
                   </select>
                 </div>
-                <label for="">Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Do you concur?</label>
-                <input id="radio1" type="radio" name="radio" value="">
-                <label for="radio1">Yes</label>
-                <input id="radio2" type="radio" name="radio" value="">
-                <label for="radio2">No</label>
-                <label for="">Check all that apply</label>
-                <input id="checkbox1" type="checkbox">
-                <label for="checkbox1">Red</label>
-                <input id="checkbox2" type="checkbox">
-                <label for="checkbox2">Orange</label>
-                <input id="checkbox3" type="checkbox">
-                <label for="checkbox3">Yellow</label>
-                <input id="checkbox4" type="checkbox">
-                <label for="checkbox4">Green</label>
-                <input id="checkbox5" type="checkbox">
-                <label for="checkbox5">Blue</label>
-                <input id="checkbox6" type="checkbox">
-                <label for="checkbox6">Indigo</label>
-                <input id="checkbox7" type="checkbox">
-                <label for="checkbox7">Violet</label>
+                <div class="radioGroup">
+                  <label for="">Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Do you concur?</label>
+                  <input id="radio1" type="radio" name="radio" value="">
+                  <label for="radio1">Yes</label>
+                  <input id="radio2" type="radio" name="radio" value="">
+                  <label for="radio2">No</label>
+                </div>
+                <div class="radioGroup">
+                  <label class="error" for="">Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Do you concur?</label>
+                  <input id="radio3" type="radio" name="radio" value="">
+                  <label for="radio3">Yes</label>
+                  <input id="radio4" type="radio" name="radio" value="" disabled>
+                  <label for="radio4">No</label>
+                </div>
+                <div class="checkboxGroup">
+                  <label for="">Check all that apply</label>
+                  <input id="checkbox1" type="checkbox">
+                  <label for="checkbox1">Red</label>
+                  <input id="checkbox2" type="checkbox">
+                  <label for="checkbox2">Orange</label>
+                  <input id="checkbox3" type="checkbox">
+                  <label for="checkbox3">Yellow</label>
+                  <input id="checkbox4" type="checkbox">
+                  <label for="checkbox4">Green</label>
+                  <input id="checkbox5" type="checkbox">
+                  <label for="checkbox5">Blue</label>
+                  <input id="checkbox6" type="checkbox">
+                  <label for="checkbox6">Indigo</label>
+                  <input id="checkbox7" type="checkbox">
+                  <label for="checkbox7">Violet</label>
+                </div>
+                <div class="checkboxGroup">
+                  <label class="error" for="">Check all that apply</label>
+                  <input id="checkboxN" type="checkbox">
+                  <label for="checkboxN">North</label>
+                  <input id="checkboxS" type="checkbox">
+                  <label for="checkboxS">South</label>
+                  <input id="checkboxE" type="checkbox">
+                  <label for="checkboxE">East</label>
+                  <input id="checkboxW" type="checkbox" disabled>
+                  <label for="checkboxW">West</label>
+                </div>
                 <label for="">Comments or questions?</label>
                 <textarea id="xyz" name="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Submit">
+                <textarea id="xyz" name="" cols="30" rows="10" disabled></textarea>
+                <input class="btn btn-primary" type="submit" value="Submit">
+                <input class="btn btn-secondary" type="submit" value="Secondary">
+                <input class="btn btn-primary" type="submit" disabled value="Primary Disabled">
+                <input class="btn" type="submit" disabled value="Disabled">
               </div>
             </div>
           </div>

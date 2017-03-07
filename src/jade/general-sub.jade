@@ -66,12 +66,43 @@ html(lang="en")
 							
 							.formContainer
 								
-								label(for="") Name
+								label.required(for="") Name
 								input(type="text")
 									
-								label(for="") Email
-								input(type="text")
+								label.error(for="") Email
+								input.error(type="text")
 								.callout.alert Please enter a valid email address
+								
+								label(for="") Label
+								input(type="text", disabled)
+								
+								fieldset
+									legend Fieldset Title
+									label(for="") Label
+									input(type="text")
+									label(for="") Label
+									input(type="text")
+									label(for="") Label
+									input(type="text")
+										
+								.formRow
+										
+									.formCol
+										label.error(for="") Label
+										input.error(type="text")
+										.callout.alert Please enter a valid email address
+										
+									.formCol
+										label(for="") Label
+										input(type="text")
+											
+									.formCol
+										label(for="") Label
+										input(type="text")
+											
+									.formCol
+										label(for="") Label
+										input(type="text")
 									
 								label(for="") Choose an Option
 								.dropDownWrapper
@@ -82,32 +113,56 @@ html(lang="en")
 										option(value="Option 4") Option 4
 										option(value="Option 5") Option 5
 										
-								label(for="") Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Do you concur?
-								input#radio1(type="radio", name="radio", value="")
-								label(for="radio1") Yes
-								input#radio2(type="radio", name="radio", value="")
-								label(for="radio2") No
-								
-								label(for="") Check all that apply
-								input#checkbox1(type="checkbox")
-								label(for="checkbox1") Red
-								input#checkbox2(type="checkbox")
-								label(for="checkbox2") Orange
-								input#checkbox3(type="checkbox")
-								label(for="checkbox3") Yellow
-								input#checkbox4(type="checkbox")
-								label(for="checkbox4") Green
-								input#checkbox5(type="checkbox")
-								label(for="checkbox5") Blue
-								input#checkbox6(type="checkbox")
-								label(for="checkbox6") Indigo
-								input#checkbox7(type="checkbox")
-								label(for="checkbox7") Violet
+								.radioGroup
+									label(for="") Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Do you concur?
+									input#radio1(type="radio", name="radio", value="")
+									label(for="radio1") Yes
+									input#radio2(type="radio", name="radio", value="")
+									label(for="radio2") No
+									
+								.radioGroup
+									label.error(for="") Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Do you concur?
+									input#radio3(type="radio", name="radio", value="")
+									label(for="radio3") Yes
+									input#radio4(type="radio", name="radio", value="", disabled)
+									label(for="radio4") No
+									
+								.checkboxGroup
+									label(for="") Check all that apply
+									input#checkbox1(type="checkbox")
+									label(for="checkbox1") Red
+									input#checkbox2(type="checkbox")
+									label(for="checkbox2") Orange
+									input#checkbox3(type="checkbox")
+									label(for="checkbox3") Yellow
+									input#checkbox4(type="checkbox")
+									label(for="checkbox4") Green
+									input#checkbox5(type="checkbox")
+									label(for="checkbox5") Blue
+									input#checkbox6(type="checkbox")
+									label(for="checkbox6") Indigo
+									input#checkbox7(type="checkbox")
+									label(for="checkbox7") Violet
+									
+								.checkboxGroup
+									label.error(for="") Check all that apply
+									input#checkboxN(type="checkbox")
+									label(for="checkboxN") North
+									input#checkboxS(type="checkbox")
+									label(for="checkboxS") South
+									input#checkboxE(type="checkbox")
+									label(for="checkboxE") East
+									input#checkboxW(type="checkbox", disabled)
+									label(for="checkboxW") West
 								
 								label(for="") Comments or questions?
 								textarea#xyz(name="", cols="30", rows="10")
+								textarea#xyz(name="", cols="30", rows="10", disabled)
 									
-								input(type="submit", value="Submit")
+								input.btn.btn-primary(type="submit", value="Submit")
+								input.btn.btn-secondary(type="submit", value="Secondary")
+								input.btn.btn-primary(type="submit", disabled, value="Primary Disabled")
+								input.btn(type="submit", disabled, value="Disabled")
 							
 			section.relatedBoxes
 				.flex-row
