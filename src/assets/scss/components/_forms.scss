@@ -32,6 +32,11 @@
    .dropDownWrapper {
       margin-bottom: $paragraph-margin-bottom;
       border: 1px solid #ddd;
+      cursor: pointer;
+
+      select {
+         cursor: pointer;
+      }
    }
 
    input {
@@ -50,6 +55,8 @@
 
       &:disabled {
          cursor: not-allowed;
+         background: $gray-lighter;
+         border: 1px solid $gray-lighter;
       }
    }
 
@@ -90,6 +97,7 @@
          margin-right: 15px;
          position: relative;
          margin-bottom: $paragraph-margin-bottom;
+         cursor: pointer;
 
          &::before {
             content: "";
@@ -113,6 +121,7 @@
 
             &::before {
                border: 1px solid $gray-light;
+               background: $gray-lighter;
             }
          }
       }
@@ -147,6 +156,7 @@
          position: relative;
          margin-right: 15px;
          margin-bottom: $paragraph-margin-bottom;
+         cursor: pointer;
 
          &::before {
             content: "";
@@ -171,6 +181,7 @@
 
             &::before {
                border: 1px solid $gray-light;
+               background: $gray-lighter;
             }
          }
       }
@@ -200,6 +211,10 @@
          padding: 0 15px;
          margin: 0;
       }
+   }
+
+   .btn {
+      cursor: pointer;
    }
 }
 

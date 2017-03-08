@@ -7328,7 +7328,10 @@ section {
 
 .formContainer .dropDownWrapper {
   margin-bottom: 2rem;
-  border: 1px solid #ddd; }
+  border: 1px solid #ddd;
+  cursor: pointer; }
+  .formContainer .dropDownWrapper select {
+    cursor: pointer; }
 
 .formContainer input {
   margin-bottom: 2rem; }
@@ -7339,7 +7342,9 @@ section {
       border: none;
       padding: 0.4rem 0; }
   .formContainer input:disabled {
-    cursor: not-allowed; }
+    cursor: not-allowed;
+    background: #eceeef;
+    border: 1px solid #eceeef; }
 
 .formContainer textarea:disabled {
   cursor: not-allowed;
@@ -7365,7 +7370,8 @@ section {
     padding: 0 0 0 30px;
     margin-right: 15px;
     position: relative;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    cursor: pointer; }
     .formContainer input[type="radio"] + label::before {
       content: "";
       display: inline-block;
@@ -7383,7 +7389,8 @@ section {
   .formContainer input[type="radio"]:disabled + label {
     cursor: not-allowed; }
     .formContainer input[type="radio"]:disabled + label::before {
-      border: 1px solid #636c72; }
+      border: 1px solid #636c72;
+      background: #eceeef; }
   .formContainer input[type="radio"]:checked + label::before {
     content: "";
     display: inline-block;
@@ -7400,7 +7407,8 @@ section {
     padding: 0 0 0 30px;
     position: relative;
     margin-right: 15px;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    cursor: pointer; }
     .formContainer input[type="checkbox"] + label::before {
       content: "";
       display: inline-block;
@@ -7419,7 +7427,8 @@ section {
   .formContainer input[type="checkbox"]:disabled + label {
     cursor: not-allowed; }
     .formContainer input[type="checkbox"]:disabled + label::before {
-      border: 1px solid #636c72; }
+      border: 1px solid #636c72;
+      background: #eceeef; }
   .formContainer input[type="checkbox"]:checked + label::before {
     content: "\f00c";
     display: inline-block;
@@ -7436,6 +7445,9 @@ section {
     font-size: 1rem;
     padding: 0 15px;
     margin: 0; }
+
+.formContainer .btn, .formContainer .topActionContent input[type="submit"], .topActionContent .formContainer input[type="submit"] {
+  cursor: pointer; }
 
 .formRow {
   display: -webkit-flex;
